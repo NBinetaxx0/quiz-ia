@@ -1,0 +1,116 @@
+
+.carte {
+  background: white;
+  width: 90%;
+  max-width: 520px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.35);
+  border: 3px solid #ffd1e6;
+}
+
+.titre {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
+  color: #e0559a;
+}
+
+.numero {
+  display: inline-block;
+  background: #ffe0ee;
+  color: #d6307f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 0 0 10px 0;
+}
+
+.enonce {
+  font-size: 1.2rem;
+  margin: 10px 0 20px 0;
+  line-height: 1.4;
+}
+
+
+.liste-reponses {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reponse {
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: left;
+  padding: 14px 18px;
+  background: #fff5fa;
+  color: #7a1f4d;
+  border: 2px solid #ffd1e6;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reponse:hover {
+  background: #ffe0ee;
+  transform: scale(1.02);
+}
+
+
+.reponse.choisie {
+  background: #ff7eb6;
+  color: white;
+  border-color: #ff4fa0;
+  font-weight: 600;
+}
+
+
+.boutons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.bouton {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 22px;
+  background: #ffe0ee;
+  color: #d6307f;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bouton.principal {
+  background: #ff4fa0;
+  color: white;
+}
+
+.bouton:hover {
+  transform: scale(1.05);
+}
+
+
+.bouton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.resultat {
+  text-align: center;
+}
+
+.score {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ff4fa0;
+  margin: 10px 0;
+}
